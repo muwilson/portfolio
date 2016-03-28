@@ -3,10 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Wilson Mullen - {{title}}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+	integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" 
+	integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css"/>
+	
+	<!-- jQuery needed to run Bootstrap -->
+	<script src="https://code.jquery.com/jquery-2.2.2.js" 
+	integrity="sha256-4/zUCqiq0kqxhZIyp4G0Gk+AOtCJsY1TA00k5ClsZYE=" 
+	crossorigin="anonymous"></script>
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+	integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
-		<img src = "static/images/profile.jpg" alt = "Wilson Mullen headshot">
+		<img id= "prof_pic" src = "static/images/profile.jpg" alt = "Wilson Mullen headshot">
 		<div class = "desktop">
 			<h1>Wilson Mullen</h1>
 			<h2>
@@ -19,14 +38,40 @@
 			<h2>Computer Scientist @ University of Michigan</h2>
 		</div>
 		<div class="mobile">
-			<h1>Wilson Mullen<h1>
+			<h1>Wilson Mullen</h1>
 			<h2>Current Page: {{ title }}</h2>
 		</div>
-		<nav>
-			<a href = "index.html">Home</a>
-			<a href = "work.html">Work Experience</a>
-			<a href = "interests.html">Interests</a>
-			<a href = "skills.html">Skills</a>
+		<nav class="navbar navbar-inverse" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">Wilson Mullen--Portfolio</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="/">Home</a></li>
+						<!-- <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="/">Home<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="/work">Work Experience</a></li>
+								<li><a href="/interests">Interests</a></li>
+								<li><a href="/skills">Skills</a></li>
+							</ul>
+						</li> -->
+						<li><a href="/work">Work Experience</a></li>
+						<li><a href="/interests">Interests</a></li>
+						<li><a href="/skills">Skills</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/new_user"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+						<li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 	</header>
 	{% block content %}
@@ -39,6 +84,7 @@
 			24 Spirea Drive
 			Dayton, OH 45419
 		</p>
-	</footer> 
+	</footer>
+	<script type="text/javascript" src="/static/js/base.js"></script>	
 </body>
 </html>
