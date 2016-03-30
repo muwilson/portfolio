@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 	<title>Wilson Mullen - {{title}}</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
@@ -25,7 +25,7 @@
 </head>
 <body>
 	<header>
-		<img id= "prof_pic" src = "static/images/profile.jpg" alt = "Wilson Mullen headshot">
+		<img id="prof_pic" src ="static/images/profile.jpg" alt = "Wilson Mullen headshot">
 		<div class = "desktop">
 			<h1>Wilson Mullen</h1>
 			<h2>
@@ -39,7 +39,7 @@
 		</div>
 		<div class="mobile">
 			<h1>Wilson Mullen</h1>
-			<h2>Current Page: {{ title }}</h2>
+			<h2>page: {{ title }}</h2>
 		</div>
 		<nav class="navbar navbar-inverse" role="navigation">
 			<div class="container-fluid">
@@ -77,12 +77,12 @@
 	{% block content %}
 	{% endblock %}
 	<footer>
-		<p>Email me: muwilson@umich.edu</p>
-		<a href="https://www.facebook.com/wilson.mullen">Facebook</a>
-		<p>
-			Phone number: (937)-269-7166
-			24 Spirea Drive
-			Dayton, OH 45419
+		<p class="left">email: muwilson@umich.edu</p>
+		<p class="center"><a href="https://www.facebook.com/wilson.mullen">Facebook</a></p>
+		<p class="right">
+			(937)-269-7166<br>
+			24 Spirea Drive<br>
+			Dayton, OH 45419<br>
 		</p>
 	</footer>
 	<script type="text/javascript" src="/static/js/base.js"></script>	
