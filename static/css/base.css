@@ -1,0 +1,163 @@
+header {
+	background: #000066;
+	background: -webkit-linear-gradient(-90deg, #266b6d, #3f8877); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, #266b6d, #3f8877); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, #266b6d, #3f8877); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, #266b6d, #3f8877); /* Standard syntax (must be last) */
+	display: inline-block;
+	width: 100%;
+	float: left;
+	border-width: 5px;
+	border-style: solid;
+}
+h1, h2 {
+	color: white;
+	display: inline;
+	font-family: Verdana, Geneva, sans-serif;
+	line-height: 50px;
+	margin: 0 0 10px;
+	font-weight: 100;
+	padding: 0 0 40px;
+}
+h1 {
+	font-size: 30px;
+}
+h2 {
+	font-size: 30px;
+	margin-right: 20px;
+}
+nav {
+	background: #000066;
+	background: -webkit-linear-gradient(90deg, #3e4140, #323434); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, #3e4140, #323434); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #3e4140, #323434); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, #3e4140, #323434); /* Standard syntax (must be last) */
+}
+nav a {
+	color: white;
+}
+p {
+	color: black;
+}
+a {
+	color: black;
+}
+footer a {
+	color: white;
+}
+body {
+	background-image: url("../images/compsc.jpg");
+	min-width: 500px;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  min-width: 550px;
+  /* Set the fixed height of the footer here */
+  height: auto;
+  background: #000066;
+  background: -webkit-linear-gradient(-90deg, #266b6d, #3f8877); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #266b6d, #3f8877); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #266b6d, #3f8877); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #266b6d, #3f8877); /* Standard syntax (must be last) */
+  border-width: 5px;
+  border-style: solid;
+  font-family: Verdana, Geneva, sans-serif;
+ }
+footer p {
+	color: white;
+	float: right;
+	width: 30%
+}
+#prof_pic {
+	display: none;
+}
+#fb_img {
+	margin-top: 5px;
+	height: 50px;
+	width: auto;
+}
+.left {
+	text-align: left;
+}
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+.desktop {
+	display: none;
+}
+.tablet {
+	display: none;
+}
+.mobile {
+	text-align: center;
+}
+@media screen and (min-width: 600px) {
+	header {
+		text-align: center;
+	}
+	h1 {
+		font-size: 40px;
+	}
+	h2 {
+		font-size: 25px;
+	}
+	.tablet {
+		display: inline;
+	}
+	.mobile {
+		display: none;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.mobile {
+		display: none;
+	}
+	.tablet {
+		display: none;
+	}
+	.desktop {
+		margin: 20px 20px 0 0;
+		display: inline;
+		overflow: auto;
+	}
+	.desktop h1 {
+		font-size: 60px;
+	}
+	.desktop h2 {
+		font-size: 30px;
+	}
+	.desktop .right {
+		float: right;
+		text-align: center;
+	}
+	.nav {
+		margin-top: 70px;
+	}
+	header {
+		padding-top: 10px;
+	}
+	#prof_pic{
+		float: left;
+		display: block;
+		height: 125px;
+		width: 125px;
+		margin-left: 100px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		border-width: 5px;
+		border-style: double;
+	}
+	.desktop_content {
+		margin-left: 210px;
+	}
+}

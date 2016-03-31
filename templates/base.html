@@ -12,11 +12,12 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" 
 	integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="static/css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="static/css/base.css"/>
 	
-	<!-- jQuery needed to run Bootstrap -->
-	<script src="https://code.jquery.com/jquery-2.2.2.js" 
-	integrity="sha256-4/zUCqiq0kqxhZIyp4G0Gk+AOtCJsY1TA00k5ClsZYE=" 
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	<script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
 	crossorigin="anonymous"></script>
 	
 	<!-- Latest compiled and minified JavaScript -->
@@ -25,23 +26,31 @@
 </head>
 <body>
 	<header>
-		<img id="prof_pic" src ="static/images/profile.jpg" alt = "Wilson Mullen headshot">
 		<div class = "desktop">
-			<h1>Wilson Mullen</h1>
-			<h2>
-				Student at University of Michigan
-				Computer Scientist
-			</h2>
+			<img id="prof_pic" src ="static/images/profile.jpg" alt = "Wilson Mullen headshot">
+			<div class="desktop_content">
+				<h1>Wilson Mullen</h1>
+				<h2 class="right">
+					Student at University of Michigan<br>Computer Scientist
+				</h2>
+			</div>
 		</div>
 		<div class = "tablet">
 			<h1>Wilson Mullen<h1><br>
 			<h2>Computer Scientist @ University of Michigan</h2>
 		</div>
 		<div class="mobile">
-			<h1>Wilson Mullen</h1>
-			<h2>page: {{ title }}</h2>
+			<h1>Wilson Mullen--Portfolio</h1>
 		</div>
-		<nav class="navbar navbar-inverse" role="navigation">
+		<nav>
+			<ul class="nav nav-pills" role="navigation">
+				<li role="presentation" class="active"><a href="/">Home</a></li>
+				<li role="presentation"><a href="/work">Work Experience</a></li>
+				<li role="presentation"><a href="/interests">Interests</a></li>
+				<li role="presentation"><a href="/skills">Skills</a></li>
+			</ul>
+		</nav>
+		<!--<nav class="navbar navbar-inverse" role="navigation">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -54,14 +63,14 @@
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="/">Home</a></li>
-						<!-- <li class="dropdown">
+						<li class="dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown" href="/">Home<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="/work">Work Experience</a></li>
 								<li><a href="/interests">Interests</a></li>
 								<li><a href="/skills">Skills</a></li>
 							</ul>
-						</li> -->
+						</li>
 						<li><a href="/work">Work Experience</a></li>
 						<li><a href="/interests">Interests</a></li>
 						<li><a href="/skills">Skills</a></li>
@@ -72,19 +81,21 @@
 					</ul>
 				</div>
 			</div>
-		</nav>
+		</nav>-->
 	</header>
 	{% block content %}
 	{% endblock %}
 	<footer>
 		<p class="left">email: muwilson@umich.edu</p>
-		<p class="center"><a href="https://www.facebook.com/wilson.mullen">Facebook</a></p>
+		<p class="center"><a class="user-image" href="https://www.facebook.com/wilson.mullen" title="Visit Wilson's profile">
+			<img id="fb_img" src="/static/images/fb.png">
+		</a></p>
 		<p class="right">
 			(937)-269-7166<br>
 			24 Spirea Drive<br>
 			Dayton, OH 45419<br>
 		</p>
 	</footer>
-	<script type="text/javascript" src="/static/js/base.js"></script>	
+	<script type="text/javascript" src="/static/js/base.js"></script>
 </body>
 </html>
