@@ -9,6 +9,7 @@ header {
 	float: left;
 	border-width: 5px;
 	border-style: solid;
+	min-width: 550px;
 }
 h1, h2 {
 	color: white;
@@ -47,7 +48,7 @@ footer a {
 }
 body {
 	background-image: url("../images/compsc.jpg");
-	min-width: 500px;
+	min-width: 550px;
 }
 html {
   position: relative;

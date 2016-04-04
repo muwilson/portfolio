@@ -44,10 +44,18 @@
 		</div>
 		<nav>
 			<ul class="nav nav-pills" role="navigation">
-				<li role="presentation" class="active"><a href="/">Home</a></li>
-				<li role="presentation"><a href="/work">Work Experience</a></li>
-				<li role="presentation"><a href="/interests">Interests</a></li>
-				<li role="presentation"><a href="/skills">Skills</a></li>
+				<li role="presentation" id="home"><a href="/">Home</a></li>
+				<li role="presentation" id="work"><a href="/work">Experience</a></li>
+				<li role="presentation" id="interests"><a href="/interests">Interests</a></li>
+				<li role="presentation" id="skills"><a href="/skills">Skills</a></li>
+				{% if logged_in %}
+					<li role="presentation">Hello, {{ name }}</li>
+					<li role="presentation" id="logout"><a href="/logout">Logout</a></li>
+					<li role="presentation" id="edit user"><a href="/edit_user">Edit Account</a></li>
+				{% else %}
+					<li role="presentation" id="login"><a href="/login">Login</a></li>
+					<li role="presentation" id="new user"><a href="/user">Create Account</a></li>
+				{% endif %}
 			</ul>
 		</nav>
 		<!--<nav class="navbar navbar-inverse" role="navigation">
@@ -96,6 +104,5 @@
 			Dayton, OH 45419<br>
 		</p>
 	</footer>
-	<script type="text/javascript" src="/static/js/base.js"></script>
 </body>
 </html>

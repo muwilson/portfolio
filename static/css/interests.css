@@ -1,0 +1,23 @@
+.interests h1, .interests h2, .interests p{
+	color: black;
+}
+.interests {
+	text-align: center;
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+}
+.interests p {
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 125%;
+}
+.interests img {
+	height: 250px;
+	width: 300px;
+	display: block;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	border-width: 5px;
+	border-style: double;
+}

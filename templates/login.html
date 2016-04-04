@@ -1,0 +1,15 @@
+{% extends "templates/base.html" %}
+{% block content %} 
+	<form action="/login" method="post">
+		{% if failure %}
+			<p>Bad credentials. Try again.</p>
+		{% endif %}
+		<label>
+			username: <input type="text" name="name">
+		</label>
+		<label>
+			password: <input type="password" name="pw">
+		</label>
+		<input type="submit" value="login">
+	</form>
+{% endblock %}
